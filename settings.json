@@ -1,0 +1,6 @@
+{
+    "orion-cli": {
+        "profile": "coffee",
+        "config": "private/orion-config.json"
+    }
+}
