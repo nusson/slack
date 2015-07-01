@@ -26,3 +26,4 @@ materialize:materialize
 orionjs:materialize
 mquandalle:stylus
 dburles:google-maps
+dburles:mongo-collection-instances
