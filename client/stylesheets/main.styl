@@ -2,7 +2,6 @@
 @import 'jeet'
 
 body
-  background: red
 
   .collection
     col(1/2)
@@ -13,3 +12,32 @@ body
   width: 100%
   max-width: 100%
   height: 500px
+
+.clear
+  cf()
+.collapsible
+  cf()
+#all
+  min-height 100vh
+.collection .collection-item.avatar
+  min-height 84px
+  height auto
+.collapsible-body
+  background-color white
+  p
+    padding 0
+  .collection
+    margin auto
+    border none
+    .header
+      width 50%
+      min-height 48px
+    h6
+      font-size .85rem
+      font-weight bold
+      margin-bottom 0
+    .secondary-content
+      a
+        margin-left: 5px
+        &:first-child
+          margin-left 0
