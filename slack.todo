@@ -1,0 +1,11 @@
+# users :
+
+ ☐ connect user with fb
+ ☐ save token in db
+ ☐ plug account-ui materialize
+ ☐ ask more infos from fb but optional
+
+# chekins
+ ☐ add user in chekin
+ ☐ use $geometry mongodb
+ ☐ stream chekins ordered by distance

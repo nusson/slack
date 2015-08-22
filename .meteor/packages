@@ -7,7 +7,6 @@ meteor-platform
 less
 jquery
 underscore
-accounts-password
 aldeed:collection2
 iron:router
 raix:handlebar-helpers
@@ -27,3 +26,8 @@ orionjs:materialize
 mquandalle:stylus
 dburles:google-maps
 dburles:mongo-collection-instances
+useraccounts:materialize
+accounts-password
+service-configuration
+accounts-facebook
+useraccounts:iron-routing

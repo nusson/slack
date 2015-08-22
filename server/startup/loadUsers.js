@@ -16,7 +16,7 @@ Meteor.startup(function () {
   Chekins = new Mongo.Collection('checkins');
 
   Chekins.allow({
-    'insert': function (userId,doc) {
+    'insert': function (userId, doc) {
       /* user and doc checks ,
       return true to allow insert */
       return true; 
