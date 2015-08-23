@@ -8,7 +8,6 @@ AccountsTemplates.configureRoute 'signIn',
   redirect: ->
     user = Meteor.user()
     if (user)
-      console.log(user)
       Router.go('/user/' + user._id)
 
 AccountsTemplates.configureRoute 'signUp'
