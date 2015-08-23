@@ -10,7 +10,15 @@ AccountsTemplates.configureRoute 'signIn',
     if (user)
       Router.go('/user/' + user._id)
 
-AccountsTemplates.configureRoute 'signUp'
+AccountsTemplates.configureRoute 'signUp',
+  # name: 'signin'
+  # path: '/login'
+  redirect: ->
+    user = Meteor.user()
+    console.log 'register : ', user
+    if (user)
+      Router.go('/user/' + user._id)
+
 AccountsTemplates.configureRoute 'verifyEmail'
 AccountsTemplates.configureRoute 'resendVerificationEmail'
 AccountsTemplates.configureRoute 'resetPwd'
