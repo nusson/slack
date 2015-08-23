@@ -1,13 +1,23 @@
+AccountsTemplates.configure
+  forbidClientAccountCreation:  false
+  showForgotPasswordLink:       true
+
 AccountsTemplates.configureRoute 'signIn',
-  name: 'signin'
-  path: '/login'
-  template: 'login'
-  layoutTemplate: 'basicLayout'
+  # name: 'signin'
+  # path: '/login'
   redirect: ->
     user = Meteor.user()
     if (user)
       console.log(user)
       Router.go('/user/' + user._id)
+
+AccountsTemplates.configureRoute 'signUp'
+AccountsTemplates.configureRoute 'verifyEmail'
+AccountsTemplates.configureRoute 'resendVerificationEmail'
+AccountsTemplates.configureRoute 'resetPwd'
+AccountsTemplates.configureRoute 'changePwd'
+AccountsTemplates.configureRoute 'enrollAccount'
+AccountsTemplates.configureRoute 'forgotPwd'
 
 AccountsTemplates.configureRoute 'ensureSignedIn',
   template: 'user-only'
